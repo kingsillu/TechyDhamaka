@@ -1,0 +1,11 @@
+{
+  "name": "build-scripts",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "rss-parser": "^3.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.11"
+  }
+}
