@@ -1,4 +1,5 @@
-import { Switch, Route } from "wouter";
+import { useEffect } from "react"; // ✅ Title ke liye add kiya
+import { Switch, Route } from "wouter"; 
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -17,6 +18,11 @@ function Router() {
 }
 
 function App() {
+  // ✅ Runtime title fix
+  useEffect(() => {
+    document.title = "⚡ TechyDhamaka";
+  }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider>
